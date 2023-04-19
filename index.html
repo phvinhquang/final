@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p {
+        color: red;
+      }
+
+      h1,
+      p:first-child {
+        background-color: orange;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src=" " alt="picture" />
+    </header>
+    <main>
+      <div class="container">
+        <div class="a1">abc</div>
+        <div class="a2">abc</div>
+        <div class="a3">abc</div>
+      </div>
+      <h1>Heading</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia officia
+        nihil perferendis nam excepturi quibusdam!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, porro
+        alias. At, consequuntur! Provident consectetur earum nemo doloribus modi
+        voluptatem quis accusantium, esse, necessitatibus saepe accusamus
+        temporibus incidunt, asperiores molestiae!
+      </p>
+      <ul>
+        <li>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+          repudiandae?
+        </li>
+        <li>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, maxime?
+        </li>
+      </ul>
+    </main>
+    <footer></footer>
+  </body>
+</html>
